@@ -26,7 +26,7 @@ main .card {
     position: absolute;
     left: 0;
     right: 0;
-    margin: 60px auto;
+    margin: 150px auto;
 }
 .card__header {
     max-width: 100%;
@@ -55,10 +55,6 @@ main .card {
     transform: scale(1.2);
     transition: transform 0.2s linear;
 }
-/* .card__header-layer {
-}
-.card__header-layer:hover {
-} */
 .card__body {
     margin: 25px 30px;
 }
