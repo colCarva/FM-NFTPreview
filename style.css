@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-body: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 18px;
+    background-color: var(--Very-dark-blue-body);
+    color: var(--White);
+    font-family: 'Outfit', sans-serif;
+}
+main .card {
+    background-color: var(--Very-dark-blue-card);
+    max-width: 345px;
+    height: 570px;
+    border-radius: .9em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 60px auto;
+}
+.card__header {
+    max-width: 100%;
+    height: 275px;
+    margin:20px 20px;
+    border-radius: 0.7em;
+    overflow: hidden;
+}
+.card__header-title {
+    width: 100%;
+    height: 100%;
+    background-color:var(--Cyan);
+    transform: scale(1);
+    transition: transform 0.2s linear;
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card__header-image {
+    background-color: none;
+    width: 100%;
+    height: 100%;
+}
+.card__header-image:hover {
+    opacity: .3;
+    transform: scale(1.2);
+    transition: transform 0.2s linear;
+}
+/* .card__header-layer {
+}
+.card__header-layer:hover {
+} */
+.card__body {
+    margin: 25px 30px;
+}
+.card__body-title {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.card__body-title:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+.card__body-text {
+    color: var(--Soft-blue);
+    font-size: .8em;
+    line-height:2em;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.card__body-wrapper {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.card__body-quantity-coin {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card__body-quantity-coin__text {
+    color: var(--Cyan);
+    font-size: .8em;
+    font-weight: 600;
+    margin-left: 7px;
+}
+.card__body-quantity-clock {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.card__body-quantity__clock-text {
+    color: var(--Soft-blue);
+    font-size: .8em;
+    font-weight: 400;
+    margin-left: 7px;
+}
+hr {
+    background-color: var(--Soft-blue);
+    border: 0 none;
+    height: .1px;
+    margin-top: 15px;
+}
+.card__body-designed {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.card__body-designed__avatar {
+    width: 1.2em;
+    border:1px solid var(--White);
+    border-radius: 50%;
+}
+.card__body-designed__text {
+    color: var(--Soft-blue);
+    font-size: .8em;
+    font-weight: 400px;
+    margin-left: 10px;
+}
+.link {
+    color: var(--White);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link:hover {
+    color: var(--Cyan);
+}
